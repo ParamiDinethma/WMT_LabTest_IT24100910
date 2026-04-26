@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: import.meta.env.VITE_API_URL || "https://wmt-labtest-it24100910.onrender.com",
+  baseURL: import.meta.env.VITE_API_URL || "${import.meta.env.VITE_API_URL}/api",
 });
 
 export const getItems = () => API.get("/items");
@@ -11,3 +11,4 @@ export const updateItem = (id, itemData) => API.put(`/items/${id}`, itemData);
 export const deleteItem = (id) => API.delete(`/items/${id}`);
 
 export default API;
+
