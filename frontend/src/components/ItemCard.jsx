@@ -9,7 +9,7 @@ function ItemCard({ item, onDelete }) {
         className="card-image"
       />
       <h3>{item.name}</h3>
-      <p>{item.suplierName}</p>
+      <p><strong>Suplier Name:</strong>{item.supplierName}</p>
       <p><strong>Category:</strong> {item.category}</p>
       <p><strong>Price:</strong> ${item.price}</p>
       <p>{item.description}</p>

@@ -22,12 +22,11 @@ const itemSchema = new mongoose.Schema(
       required: [true, "Description is required"],
       trim: true,
     },
-    suplierName: {
+    supplierName: {                                         
       type: String,
-      required: [true, "Description is required"],
+      required: [true, "Supplier name is required"],       
       trim: true,
     },
-     
     imageUrl: {
       type: String,
       default: "",
